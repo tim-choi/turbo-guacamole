@@ -1,7 +1,7 @@
 import { useLocation } from "wouter";
 import ProjectCard from "./ProjectCard";
-import { getAllProjects } from "@shared/projects";
-import { getProjectImage } from "@shared/assets";
+import { getAllProjects } from "@shared/projects.ts";
+import { getProjectImage } from "@/lib/projectImages";
 
 const projects = getAllProjects();
 

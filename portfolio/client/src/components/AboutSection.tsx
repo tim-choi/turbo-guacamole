@@ -55,9 +55,9 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-24 bg-card">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="min-h-screen py-12 bg-card flex items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-serif sm:text-4xl text-foreground mb-6">
               About Me
@@ -99,12 +99,13 @@ export default function AboutSection() {
                 </div>
               </div>
 
-              <Button 
-                onClick={handleDownloadResume}
-                disabled={isDownloading}
-                className="w-full sm:w-auto"
-                data-testid="button-download-resume"
-              >
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button 
+                  onClick={handleDownloadResume}
+                  disabled={isDownloading}
+                  className="w-full sm:w-auto"
+                  data-testid="button-download-resume"
+                >
                 {isDownloading ? (
                   <>
                     <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent"></div>
@@ -116,16 +117,29 @@ export default function AboutSection() {
                     Download Resume
                   </>
                 )}
-              </Button>
+                </Button>
+
+                <Button
+                  variant="outline"
+                  onClick={() => {
+                    const el = document.getElementById('work');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="w-full sm:w-auto"
+                  data-testid="button-see-work"
+                >
+                  See my Work
+                </Button>
+              </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative w-full max-w-md mx-auto">
+          <div className="relative flex justify-center">
+            <div className="relative w-full max-w-sm mx-auto">
               <img 
                 src={profileImage} 
                 alt="Alex Chen - UX/UI Designer"
-                className="w-full rounded-lg shadow-lg"
+                className="w-full rounded-lg shadow-lg object-cover max-h-[60vh]"
               />
             </div>
           </div>

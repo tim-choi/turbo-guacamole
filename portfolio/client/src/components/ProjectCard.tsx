@@ -25,9 +25,18 @@ export default function ProjectCard({ title, description, image, tags, category,
     >
       <div className="relative overflow-hidden rounded-lg mb-6 shadow-md group-hover:shadow-xl transition-shadow duration-300">
         <img 
-          src={image} 
+          src={image}
           alt={title}
           className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          onError={(e) => {
+            // fallback to a placeholder image if the original fails to load
+            const target = e.currentTarget as HTMLImageElement;
+            const placeholder = '/images/Designer_workspace_hero_image_bdd6e84c.png';
+            if (target.src !== placeholder) {
+              console.warn(`Image failed to load for project "${title}":`, target.src);
+              target.src = placeholder;
+            }
+          }}
         />
         
         {/* Gradient overlay for text visibility */}

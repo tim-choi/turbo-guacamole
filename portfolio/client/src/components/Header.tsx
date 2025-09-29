@@ -21,6 +21,15 @@ export default function Header() {
     }
   };
 
+  const handleAboutClick = () => {
+    if (location === '/') {
+      scrollToSection('about');
+    } else {
+      navigate('/');
+      setTimeout(() => scrollToSection('about'), 100);
+    }
+  };
+
   const handleEmailClick = () => {
     console.log('Email clicked');
     window.location.href = 'mailto:hello@alexchen.design';
@@ -42,6 +51,13 @@ export default function Header() {
               data-testid="nav-work"
             >
               Work
+            </button>
+            <button 
+              onClick={handleAboutClick}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              data-testid="nav-about"
+            >
+              About
             </button>
             <button 
               onClick={handleEmailClick}

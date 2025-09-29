@@ -7,7 +7,7 @@ export const projects: Project[] = [
     title: "Hawaii DOE Internal Management System",
     description: "Full-stack web application streamlining internal processes for the Department of Education.",
     fullDescription: "A comprehensive internal management system designed to modernize the Hawaii State Department of Education's workflow processes. The application bridges the gap between legacy systems and modern user expectations, providing educators and administrators with intuitive tools for daily operations.",
-    image: "education-dashboard", // Reference key for image imports
+    image: "hawaii-app", // Reference key for image imports
     tags: ["FULL-STACK", "USER EXPERIENCE", "AGILE DEVELOPMENT"],
     category: "Enterprise / Government",
     client: "Hawaii State Department of Education",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     title: "StudyMeets - Social Learning Platform",
     description: "React Native mobile app connecting students for collaborative summer project work.",
     fullDescription: "StudyMeets addresses the challenge of student isolation during summer breaks by creating a platform where learners can find like-minded peers for collaborative projects. The app combines social networking principles with educational goals to foster meaningful academic connections.",
-    image: "social-mobile-app", // Reference key for image imports
+    image: "study-app", // Reference key for image imports
     tags: ["MOBILE DESIGN", "SOCIAL PLATFORM", "REACT NATIVE"],
     category: "Mobile / Social",
     client: "UCSB Computer Science Course Project",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     title: "Medminder - Digital Healthcare Management",
     description: "Comprehensive web application for medication tracking and healthcare scheduling.",
     fullDescription: "Medminder transforms healthcare management by providing patients with a centralized platform for medication tracking, appointment scheduling, and health monitoring. The application addresses the growing need for digital health solutions that empower patients to take control of their healthcare journey.",
-    image: "healthcare-dashboard", // Reference key for image imports
+    image: "med-app", // Reference key for image imports
     tags: ["HEALTHCARE UX", "WEB APPLICATION", "API INTEGRATION"],
     category: "Healthcare / Web Platform",
     client: "UCSB Computer Science Course Project",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     title: "Brumbl - Campus Food Delivery Service",
     description: "End-to-end business solution for campus-based brownie delivery with integrated marketing.",
     fullDescription: "Brumbl represents a complete entrepreneurial venture that combined food service, digital marketing, and operations management. The project demonstrates how design thinking and business strategy can create successful campus-based services while building brand recognition and customer loyalty.",
-    image: "food-delivery-brand", // Reference key for image imports
+    image: "brumbl-app", // Reference key for image imports
     tags: ["BRAND DESIGN", "SOCIAL MEDIA", "BUSINESS STRATEGY"],
     category: "Entrepreneurship / Brand Design",
     client: "Independent Venture",
