@@ -6,7 +6,7 @@ export default function PersonalIntro() {
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex items-start space-x-6">
           <div className="flex-shrink-0">
-            <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+            <div className="w-60 h-60 rounded-full overflow-hidden shadow-lg">
               <img 
                 src={profileImage} 
                 alt="Timothy Choi"
@@ -16,7 +16,7 @@ export default function PersonalIntro() {
           </div>
           
           <div className="flex-1">
-            <h2 className="text-2xl font-medium text-foreground mb-4">
+            <h2 className="text-3xl font-serif font-medium text-foreground mb-4">
               Hi, I'm Tim 👋
             </h2>
             

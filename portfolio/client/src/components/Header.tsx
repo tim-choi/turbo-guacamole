@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header className="w-full py-8 bg-white/95 relative">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="flex items-center justify-between">
+        <div className="font-serif flex items-center justify-between">
           <div>
             <h1 className="text-lg font-medium text-foreground">Timothy Choi</h1>
             <p className="text-sm text-muted-foreground mt-1">Design Engineer</p>
